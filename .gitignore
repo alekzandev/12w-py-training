@@ -1,0 +1,18 @@
+# Python binaries
+*.pyc
+*.pyo
+
+# C extensions
+*.so
+
+# Mac OS X
+.DS_Store
+
+# Python
+**/__pycache__
+
+# Jupyter Notebook
+**/.ipynb_checkpoints
+
+# Poetry
+**/poetry.lock
