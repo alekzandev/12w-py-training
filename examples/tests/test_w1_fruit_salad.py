@@ -9,6 +9,6 @@ def test_salad_mixer_no_fruits():
 
 def test_salad_mixer_with_fruits():
     runner = CliRunner()
-    result = runner.invoke(salad_mixer, ['["apple", "banana", "cherry"]'])
-    assert result.exit_code == 2
-    #assert 'apple, banana, cherry' in result.output
+    result = runner.invoke(salad_mixer, input='["apple", "banana", "cherry"]')
+    assert result.exit_code == 0
+    # assert 'apple, banana, cherry' in result.output

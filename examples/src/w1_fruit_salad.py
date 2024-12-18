@@ -24,5 +24,5 @@ def salad_mixer(fruits):
     return fruit_salad
 
 if __name__ == '__main__':
-    print(salad_mixer(standalone_mode=False))
+    print(salad_mixer())
     
