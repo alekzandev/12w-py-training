@@ -1,11 +1,7 @@
-import click
 import logging
-from click.testing import CliRunner
 
 logging.basicConfig(level=logging.INFO)
 
-@click.command()
-@click.option('--fruits')
 def salad_mixer(fruits):
     """
     Mix fruits to make a fruit salad.
@@ -24,5 +20,6 @@ def salad_mixer(fruits):
     return fruit_salad
 
 if __name__ == '__main__':
-    print(salad_mixer())
+    fruits = '["apple", "banana", "orange"]'
+    print(salad_mixer(fruits))
     
